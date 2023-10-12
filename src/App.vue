@@ -5,7 +5,6 @@ import Content from "./components/Content.vue";
 <template>
   <header>Project name</header>
   <main>
-    Project content
     <Content />
   </main>
   <footer>
@@ -50,10 +49,16 @@ footer {
 
 footer hr {
   width: 80%;
+  color: var(--bg_s);
 }
 
 footer a {
   margin-top: 1rem;
+  color: var(--aqua_dim);
+}
+
+footer a:hover {
+  color: var(--aqua);
 }
 
 * {
