@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue';
 
 const count = ref(0);
 </script>
@@ -11,17 +11,18 @@ const count = ref(0);
 <style scoped>
 button {
   border: none;
-  color: var(--foreground);
+  background-color: transparent;
+  color: var(--fg);
   font-family: monospace;
   font-size: 2rem;
-  border: 5px solid var(--main);
+  border: 5px solid var(--red_dim);
   padding: 1rem;
   border-radius: 1rem;
   transition-duration: 200ms;
 }
 
 button:hover {
-  color: var(--background);
-  background-color: var(--foreground);
+  color: var(--bg);
+  background-color: var(--fg);
 }
 </style>

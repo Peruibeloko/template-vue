@@ -1,26 +1,37 @@
 <script setup lang="ts">
-import Content from "./components/Content.vue";
+import Content from './components/Content.vue';
+import Credits from './components/Credits.vue';
 </script>
 
 <template>
-  <header>Project name</header>
+  <header>
+    <h1>Project name</h1>
+  </header>
   <main>
     <Content />
   </main>
-  <footer>
-    <hr />
-    <a href="http://github.com/peruibeloko/template-vue">Link to source</a>
-  </footer>
+  <Credits />
 </template>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body,
 #app {
   height: 100%;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--bg_h);
+  color: var(--fg);
 }
 
 #app {
@@ -28,13 +39,9 @@ body,
   align-items: center;
 }
 
-header,
-main,
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+header {
+  margin-top: 1rem;
+  width: 100%;
 }
 
 main {
@@ -42,35 +49,10 @@ main {
 }
 
 header,
-footer {
-  height: 5rem;
-  width: 100%;
-}
-
-footer hr {
-  width: 80%;
-  color: var(--bg_s);
-}
-
-footer a {
-  margin-top: 1rem;
-  color: var(--aqua_dim);
-}
-
-footer a:hover {
-  color: var(--aqua);
-}
-
-* {
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-html,
-body {
-  background-color: var(--background);
-  color: var(--foreground);
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 </style>
