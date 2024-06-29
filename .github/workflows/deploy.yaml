@@ -9,5 +9,5 @@ permissions:
   contents: write
 
 jobs:
-  build-and-deploy:
+  imported:
     uses: peruibeloko/shared/.github/workflows/vue.yaml@main
