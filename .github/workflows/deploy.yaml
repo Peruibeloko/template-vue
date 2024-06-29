@@ -10,4 +10,4 @@ permissions:
 
 jobs:
   build-and-deploy:
-    uses: peruibeloko/shared/.github/workflows/vue.yml@main
+    uses: peruibeloko/shared/.github/workflows/vue.yaml@main
